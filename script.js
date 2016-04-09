@@ -130,3 +130,7 @@ $("h1").on("click", function() {
     setTimeout(300);
     window.location.href = "https://github.com/wc1202";
 });
+// force https
+if (window.location.protocol != "https:") {
+    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+}
