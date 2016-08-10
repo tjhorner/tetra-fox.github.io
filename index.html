@@ -78,7 +78,7 @@
                 var url = src.match(/\((.*?)\)/)[1].replace(/('|")/g, '');
                 var img = new Image();
 
-                img.src = data.data.image_original_url;
+                img.src = data.data.image_original_url.replace(/^http:\/\//i, 'https://');;
                 img.onload = function() {
                     $("body").css("background-image", "url('" + img.src + "')");
 										console.log(img.src);
