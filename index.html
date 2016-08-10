@@ -72,7 +72,7 @@
             }
         function setBg() {
 						// public key because i dont want to request a production key
-            $.getJSON('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=vaporwave+aesthetic', function(data) {
+            $.getJSON('https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=vaporwave+aesthetic', function(data) {
 
                 var src = $("body").css("background-image");
                 var url = src.match(/\((.*?)\)/)[1].replace(/('|")/g, '');
