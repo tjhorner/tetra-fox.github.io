@@ -112,13 +112,12 @@
         $(".ok-button").click(function() {
             $("#warning").fadeOut(1000, function() {
                 $(this).remove();
+                localStorage.setItem("warned", "yes");
             });
         });
         var warned = localStorage.getItem("warned");
         if (warned === "yes") {
             $("#warning").remove();
-        } else {
-            localStorage.setItem("warned", "yes");
         }
     </script>
     <!-- http://bl.ocks.org/guilhermesimoes/fbe967d45ceeb350b765 -->
