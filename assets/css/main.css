@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import "font-awesome.min.css";
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300";
 /*
 	Identity by HTML5 UP
@@ -875,160 +874,137 @@ body.is-ie #wrapper {
     outline: none;
     z-index: 1001;
 }
-
 #warning {
-  position: absolute;
-  z-index: 1000;
-  background: black;
-  width: 100%;
-  height: 100%;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -moz-justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
-  -moz-flex-direction: column;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -moz-perspective: 1000px;
-  -webkit-perspective: 1000px;
-  -ms-perspective: 1000px;
-  perspective: 1000px;
-  color: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    z-index: 1000;
+    background: black;
+    width: 100%;
+    height: 100%;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-perspective: 1000px;
+    -webkit-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+    color: rgba(255, 255, 255, 0.75);
 }
-
 #details {
-  position: absolute;
-  top: 50%;
+    position: absolute;
+    top: 50%;
     left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
 }
-
 #warning>#details>.fa-exclamation-triangle {
-  color: #ffcc00;
-  font-size: 200px;
+    color: #ffcc00;
+    font-size: 200px;
 }
-
 .ok-button {
-  color: rgba(255, 255, 255, 0.75) !important;
-  outline: none;
+    color: rgba(255, 255, 255, 0.75) !important;
+    outline: none;
 }
-
 .animated {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
-
 .delay {
-  animation-delay: 1.3s;
-      -moz-animation-delay: 1.3s;
-      -webkit-animation-delay: 1.3s;
-      -o-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+    -webkit-animation-delay: 1.3s;
+    -o-animation-delay: 1.3s;
 }
-
 /* https://github.com/daneden/animate.css/blob/master/animate.css#L1441 */
 
 @-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
 }
-
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
 }
-
 .fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
 }
-
 /* https://github.com/daneden/animate.css/blob/master/animate.css#L1218 */
 
 @-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-
 .fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
-
 @-webkit-keyframes glow {
-  0% {
-    text-shadow: 0px 0px 0px #ffcc00;
-  }
-
-  50% {
-    text-shadow: 0px 0px 50px #ffcc00;
-  }
-
-  100% {
-    text-shadow: 0px 0px 0px #ffcc00;
-  }
+    0% {
+        text-shadow: 0px 0px 0px #ffcc00;
+    }
+    50% {
+        text-shadow: 0px 0px 50px #ffcc00;
+    }
+    100% {
+        text-shadow: 0px 0px 0px #ffcc00;
+    }
 }
-
 @keyframes glow {
-  0% {
-    text-shadow: 0px 0px 0px #ffcc00;
-  }
-
-  50% {
-    text-shadow: 0px 0px 50px #ffcc00;
-  }
-
-  100% {
-    text-shadow: 0px 0px 0px #ffcc00;
-  }
+    0% {
+        text-shadow: 0px 0px 0px #ffcc00;
+    }
+    50% {
+        text-shadow: 0px 0px 50px #ffcc00;
+    }
+    100% {
+        text-shadow: 0px 0px 0px #ffcc00;
+    }
 }
-
 .fadeNglow {
-  animation: fadeInUp 2s, glow 2s infinite;
+    animation: fadeInUp 2s, glow 2s infinite;
 }
