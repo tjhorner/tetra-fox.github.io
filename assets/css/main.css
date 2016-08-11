@@ -872,6 +872,7 @@ body.is-ie #wrapper {
     fill: #fff;
     background: rgba(0, 0, 0, 0.5);
     outline: none;
+    z-index: 1001;
 }
 
 #warning {
