@@ -6,12 +6,6 @@ if ("addEventListener" in window) {
     document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? " is-ie" : "");
 }
 
-// because the song is too loud idk y
-window.onload = function() {
-    var backgroundAudio = $("#song");
-    backgroundAudio.prop("volume", 0.5);
-}
-
 // gif slideshow
 function setBg() {
     $.getJSON("https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=vaporwave", function(data) {
@@ -40,10 +34,18 @@ if (warned === "yes") {
     $("#warning").remove();
 }
 
+if ($("#warning").length) {
+    var backgroundAudio = $("#song");
+    backgroundAudio.prop("volume", 0.5);
+}
+
 // warning close button
 $(".ok-button").click(function() {
     $("#warning").fadeOut(1000, function() {
         $(this).remove();
         localStorage.setItem("warned", "yes");
     });
+    backgroundAudio.animate({
+        volume: 1
+    }, 1000);
 });

@@ -50,9 +50,15 @@ var playButton = {
             });
         } else {
             backgroundAudio[0].play();
-            backgroundAudio.animate({
-                volume: 0.5
-            }, "fast");
+            if ($("#warning").length) {
+                backgroundAudio.animate({
+                    volume: 0.5
+                }, "fast");
+            } else {
+                backgroundAudio.animate({
+                    volume: 1
+                }, "fast");
+            }
         }
     },
 
