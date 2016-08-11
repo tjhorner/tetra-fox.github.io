@@ -1,87 +1,106 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Identity by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+
 <head>
     <title>wc1202</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="assets/css/main.css" rel="stylesheet">
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <noscript>
+    <meta content="0; URL=noscript.html" http-equiv="refresh"></noscript>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+    </script>
 </head>
 
 <body class="is-loading">
 
+    <!-- warning -->
+    <div id="warning">
+        <div id="details">
+            <i class="fa fa-exclamation-triangle animated fadeInUp"></i>
+            <br>
+            <br>
+            <p class="animated delay fadeIn">this website contains flashing images<br>and may be unsuitable for viewers with photo-sensitive epilepsy</p>
+            <p class="animated delay fadeIn">user discretion is advised</p>
+            <button class="ok-button animated delay fadeIn">GOT IT, ENTER THE SITE</button>
+        </div>
+    </div>
+
     <!-- Wrapper -->
     <div id="wrapper">
+        <!-- play/pause -->
+        <button class="button js-button"><svg height="100%" viewbox="0 0 36 36" width="100%">
+        <defs>
+            <path d="M11,10 L17,10 17,26 11,26 M20,10 L26,10 26,26 20,26" data-state="playing" id="pause-icon"></path>
+            <path d="M11,10 L18,13.74 18,22.28 11,26 M18,13.74 L26,18 26,18 18,22.28" data-state="paused" id="play-icon"></path>
+        </defs>
+        <use xlink:href="#pause-icon"></use></svg></button>
 
         <!-- Main -->
         <section id="main">
             <header>
-                <span class="avatar"><img src="https://avatars3.githubusercontent.com/u/6416201" alt="" /></span>
+                <span class="avatar"><img alt="" src="https://avatars3.githubusercontent.com/u/6416201"></span>
                 <h1>wc1202</h1>
             </header>
             <footer>
                 <ul class="icons">
-                    <li><a href="blog" class="fa-pencil">Blog</a></li>
-                    <li><a href="https://github.com/wc1202" class="fa-github">GitHub</a></li>
-                    <li><a href="https://keybase.io/wc1202" class="fa-key">Keybase</a></li>
-                    <li><a href="https://reddit.com/u/Syrexide" class="fa-reddit-alien">Reddit</a></li>
-                    <li><a href="https://soundcloud.com/tetrasthings" class="fa-soundcloud">Soundcloud</a></li>
-                    <li><a href="https://steamcommunity.com/id/tetraa" class="fa-steam">Steam</a></li>
-                    <li><a href="https://twitter.com/furrytrashtetra" class="fa-twitter">Twitter</a></li>
+                    <li><a class="fa-pencil" href="blog">Blog</a></li>
+                    <li><a class="fa-github" href="https://github.com/wc1202">GitHub</a></li>
+                    <li><a class="fa-key" href="https://keybase.io/wc1202">Keybase</a></li>
+                    <li><a class="fa-reddit-alien" href="https://reddit.com/u/Syrexide">Reddit</a></li>
+                    <li><a class="fa-soundcloud" href="https://soundcloud.com/tetrasthings">Soundcloud</a></li>
+                    <li><a class="fa-steam" href="https://steamcommunity.com/id/tetraa">Steam</a></li>
+                    <li><a class="fa-twitter" href="https://twitter.com/furrytrashtetra">Twitter</a></li>
                 </ul>
             </footer>
         </section>
-
         <!-- Footer -->
         <footer id="footer">
             <ul class="copyright">
                 <li>&copy; me</li>
                 <li>
-                    <a href="https://giphy.com/"><img src="images/giphy.png" alt="giphy attribution" id="attr" /></a>
+                    <a href="https://giphy.com/"><img alt="giphy attribution" id="attr" src="images/giphy.png"></a>
                 </li>
-                <li><a href="https://soundcloud.com/home-2001/resonance/">>>music<<</a></li>
+                <li><a href="https://soundcloud.com/home-2001/resonance/">&gt;&gt;music&lt;&lt;</a></li>
             </ul>
         </footer>
-
     </div>
-    <audio id="ok" autoplay loop src="resonance.mp3" />
+    <audio autoplay id="song" loop src="resonance.mp3"></audio>
     <!-- Scripts -->
     <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-    <script>
-        if ('addEventListener' in window) {
-            window.addEventListener('load', function() {
-                document.body.className = document.body.className.replace(/\bis-loading\b/, '');
-            });
-            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-        }
-    </script>
 
     <script>
+        if ("addEventListener" in window) {
+            window.addEventListener("load", function() {
+                document.body.className = document.body.className.replace(/\bis-loading\b/, "");
+            });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? " is-ie" : "");
+        }
         window.onload = function() {
-                var backgroundAudio = document.getElementById("ok");
-                backgroundAudio.volume = 0.5;
-            }
+            var backgroundAudio = $("#song");
+            backgroundAudio.prop("volume", 0.5);
+        }
+
         function setBg() {
-						// public key because i dont want to request a production key
-            $.getJSON('https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=vaporwave+aesthetic', function(data) {
+            // public key because i dont want to request a production key
+            $.getJSON("https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=vaporwave", function(data) {
 
                 var src = $("body").css("background-image");
-                var url = src.match(/\((.*?)\)/)[1].replace(/('|")/g, '');
+                var url = src.match(/\((.*?)\)/)[1].replace(/("|")/g, "");
                 var img = new Image();
 
-                img.src = data.data.image_original_url.replace(/^http:\/\//i, 'https://');;
+                img.src = data.data.image_original_url.replace(/^http:\/\//i, "https://");;
                 img.onload = function() {
                     $("body").css("background-image", "url('" + img.src + "')");
-										console.log(img.src);
+                    console.log(img.src);
                 }
                 if (img.complete) {
                     img.onload();
@@ -90,7 +109,89 @@
         }
         setBg();
         setInterval(setBg, 5000);
+        $(".ok-button").click(function() {
+            $("#warning").fadeOut(1000, function() {
+                $(this).remove();
+            });
+        });
+        var warned = localStorage.getItem("warned");
+        if (warned === "yes") {
+            $("#warning").remove();
+        } else {
+            localStorage.setItem("warned", "yes");
+        }
     </script>
+    <!-- http://bl.ocks.org/guilhermesimoes/fbe967d45ceeb350b765 -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript">
+        "use strict";
 
+        /* global d3, document */
+        var playButton = {
+            el: document.querySelector(".js-button"),
+
+            iconEls: {
+                playing: document.querySelector("#pause-icon"),
+                paused: document.querySelector("#play-icon")
+            },
+
+            nextState: {
+                playing: "paused",
+                paused: "playing"
+            },
+
+            animationDuration: 350,
+
+            init: function() {
+                this.setInitialState();
+                this.replaceUseEl();
+                this.el.addEventListener("click", this.toggle.bind(this));
+            },
+
+            setInitialState: function() {
+                var initialIconRef = this.el.querySelector("use").getAttribute("xlink:href");
+                this.state = this.el.querySelector(initialIconRef).getAttribute("data-state");
+            },
+
+            replaceUseEl: function() {
+                d3.select(this.el.querySelector("use")).remove();
+                d3.select(this.el.querySelector("svg")).append("path")
+                    .attr("class", "js-icon")
+                    .attr("d", this.stateIconPath());
+            },
+
+            toggle: function() {
+                this.goToNextState();
+
+                d3.select(this.el.querySelector(".js-icon")).transition()
+                    .duration(this.animationDuration)
+                    .attr("d", this.stateIconPath());
+                var backgroundAudio = $("#song");
+                if (backgroundAudio[0].paused == false) {
+                    backgroundAudio.animate({
+                        volume: 0
+                    }, "fast", function() {
+                        backgroundAudio[0].pause();
+                    });
+                } else {
+                    backgroundAudio[0].play();
+                    backgroundAudio.animate({
+                        volume: 0.5
+                    }, "fast");
+                }
+            },
+
+            goToNextState: function() {
+                this.state = this.nextState[this.state];
+            },
+
+            stateIconPath: function() {
+                return this.iconEls[this.state].getAttribute("d");
+            }
+        };
+
+        playButton.init();
+    </script>
 </body>
+
 </html>
