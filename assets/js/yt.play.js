@@ -52,7 +52,7 @@ var playButton = {
             backgroundAudio[0].play();
             if ($("#warning").length) {
                 backgroundAudio.animate({
-                    volume: 0.5
+                    volume: 0.1
                 }, "fast");
             } else {
                 backgroundAudio.animate({

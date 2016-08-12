@@ -32,11 +32,9 @@ setInterval(setBg, 5000);
 var warned = localStorage.getItem("warned");
 if (warned === "yes") {
     $("#warning").remove();
-}
-
-if ($("#warning").length) {
+} else {
     var backgroundAudio = $("#song");
-    backgroundAudio.prop("volume", 0.5);
+    backgroundAudio.prop("volume", 0.1);
 }
 
 // warning close button
