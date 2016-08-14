@@ -39,9 +39,9 @@ if (warned != "yes") {
 
 // warning close button
 $(".ok-button").click(function() {
+    localStorage.setItem("warned", "yes");
     $("#warning").fadeOut(1000, function() {
         $(this).remove();
-        localStorage.setItem("warned", "yes");
     });
     backgroundAudio.animate({
         volume: 1
