@@ -11,9 +11,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <noscript><meta content="0; URL=noscript.html" http-equiv="refresh"></noscript>
     <link rel="stylesheet" href="assets/css/main.css" media="screen" charset="utf-8">
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" charset="utf-8"></script>
-    <script src="https://use.fontawesome.com/94c7e4ba6f.js" charset="utf-8"></script>
-    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="assets/css/outdatedbrowser/outdatedbrowser.min.css" media="screen" charset="utf-8">
 </head>
 
 <body class="is-loading">
@@ -66,8 +64,42 @@
     </div>
 
     <audio autoplay id="song" loop src="private-caller.mp3"></audio>
+    <div id="outdated">
+      <h6>Your browser is out-of-date!</h6>
+      <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+      <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+    </div>
 
+    <script src="assets/js/outdatedbrowser/outdatedbrowser.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" charset="utf-8"></script>
+    <script src="https://use.fontawesome.com/94c7e4ba6f.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="assets/js/main.js" charset="utf-8"></script>
     <script src="assets/js/yt.play.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    //event listener: DOM ready
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+      window.onload = func;
+  } else {
+      window.onload = function() {
+          if (oldonload) {
+              oldonload();
+          }
+          func();
+      }
+  }
+}
+//call plugin function after DOM ready
+addLoadEvent(function(){
+  outdatedBrowser({
+      bgColor: '#f25648',
+      color: '#ffffff',
+      lowerThan: 'transform',
+      languagePath: ''
+  })
+});
+    </script>
 </body>
 </html>
