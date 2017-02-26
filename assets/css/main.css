@@ -22,7 +22,7 @@ header > h1 {
   font-size: 3em;
 }
 
-header > p {
+header > p:first-of-type {
   font-size: 18px;
   margin-top: -35px;
   margin-left: 165px;
@@ -92,6 +92,12 @@ footer {
 }
 .fa-steam:hover {
   color: #000000 !important;
+}
+.fa-medium:hover {
+  color: #48e79a !important;
+}
+.fa-tumblr:hover {
+  color: #36465d !important;
 }
 .fa-soundcloud:hover {
   color: #ff8800 !important;
