@@ -1,105 +1,64 @@
 <!DOCTYPE html>
-<!--
-    Identity by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 <head>
-    <title>wc1202</title>
+    <!-- Various Meta -->
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <noscript><meta content="0; URL=noscript.html" http-equiv="refresh"></noscript>
-    <link rel="stylesheet" href="assets/css/main.css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="assets/css/outdatedbrowser/outdatedbrowser.min.css" media="screen" charset="utf-8">
+    <title>tetra is fluffy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="tetra">
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.ico"> -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Javascript -->
+    <script defer src="assets/js/main.js" charset="utf-8"></script>
 </head>
-
-<body class="is-loading">
-    <div id="warning">
-        <div id="details">
-            <i class="fa fa-exclamation-triangle animated fadeNglow"></i>
-            <br>
-            <br>
-            <p class="animated delay fadeIn">this website contains flashing images<br>and may be unsuitable for viewers with photosensitive epilepsy</p>
-            <p class="animated delay fadeIn">user discretion is advised</p>
-            <button class="ok-button animated delay fadeIn">GOT IT, ENTER THE SITE</button>
-        </div>
-    </div>
-
-    <button class="button js-button">
-      <svg height="100%" viewbox="0 0 36 36" width="100%">
-        <defs>
-          <path d="M11,10 L17,10 17,26 11,26 M20,10 L26,10 26,26 20,26" data-state="playing" id="pause-icon"></path>
-          <path d="M11,10 L18,13.74 18,22.28 11,26 M18,13.74 L26,18 26,18 18,22.28" data-state="paused" id="play-icon"></path>
-        </defs>
-        <use xlink:href="#pause-icon"></use>
-      </svg>
-    </button>
-
+<body>
+    <!-- Wrapper -->
     <div id="wrapper">
-        <section id="main">
-            <header>
-                <span class="avatar"><img src="images/identicon.png" alt="identicon"></span>
-                <h1>wc1202</h1>
-            </header>
-            <footer>
-                <ul class="icons">
-                    <li><a class="fa-pencil" href="blog">Blog</a></li>
-                    <li><a class="fa-github" href="https://github.com/wc1202">GitHub</a></li>
-                    <li><a class="fa-key" href="https://keybase.io/wc1202">Keybase</a></li>
-                    <li><a class="fa-reddit-alien" href="https://reddit.com/u/Syrexide">Reddit</a></li>
-                    <li><a class="fa-soundcloud" href="https://soundcloud.com/tetrasthings">Soundcloud</a></li>
-                    <li><a class="fa-steam" href="https://steamcommunity.com/id/tetraa">Steam</a></li>
-                    <li><a class="fa-twitter" href="https://twitter.com/tetrafox_">Twitter</a></li>
-                </ul>
-            </footer>
-        </section>
-        <footer id="footer">
-            <ul class="copyright">
-                <li>&copy; me</li>
-                <li><a href="https://giphy.com/"><img alt="giphy attribution" id="attr" src="images/giphy.png"></a></li>
-                <li><a href="https://soundcloud.com/skylarspence/private-caller">&gt;&gt;music&lt;&lt;</a></li>
-            </ul>
+        <!-- Header -->
+        <header>
+            <h1>hi there! i'm tetra.</h1>
+            <p id="uwu">typing with paws is hard~</p>
+        </header>
+        <!-- Content -->
+        <div id="content">
+            <h3>here are some things i've made</h3>
+            <!-- Project: leavealink -->
+            <div class="project">
+                <a href="https://leavealink.tk" class="projTitle">leavealink</a>
+                <p class="projDetail">leave a link, get a link</p>
+                <video class="projMedia" src="assets/vid/leavealink.mp4" autoplay loop></video>
+                <p class="projDetail smolBean">(the person before me left reddit.com)</p>
+            </div>
+            <!-- Project: VolumeFeedback -->
+            <div class="project">
+                <a href="https://github.com/wc1202/VolumeFeedback" class="projTitle">VolumeFeedback</a>
+                <p class="projDetail">a mac-esque volume feedback tool for windows</p>
+                <img class="projMedia" src="assets/img/volumefeedback.png"></img>
+            </div>
+            <!-- Project: AdHate -->
+            <div class="project">
+                <a href="https://github.com/wc1202/AdHate" class="projTitle">AdHate</a>
+                <p class="projDetail">block ads everywhere</p>
+                <img class="projMedia" src="assets/img/adhate.png"></img>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <!-- Profiles -->
+            <div id="profiles">
+                <a href="https://github.com/wc1202" class="fa fa-github"></a>
+                <a href="https://keybase.io/tetrafox" class="fa fa-key"></a>
+                <a href="https://t.me/tetra_fox" class="fa fa-telegram"></a>
+                <a href="https://twitter.com/tetrafox_" class="fa fa-twitter"></a>
+                <a href="https://reddit.com/u/syrexide" class="fa fa-reddit-alien"></a>
+                <a href="https://steamcommunity.com/id/tetrafox" class="fa fa-steam"></a>
+                <a href="https://soundcloud.com/tetrafox" class="fa fa-soundcloud"></a>
+                <a href="https://twitch.tv/tetrafox_" class="fa fa-twitch"></a>
+            </div>
         </footer>
     </div>
-
-    <audio autoplay id="song" loop src="private-caller.mp3"></audio>
-    <div id="outdated">
-      <h6>Your browser is out-of-date!</h6>
-      <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
-      <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
-    </div>
-
-    <script src="assets/js/outdatedbrowser/outdatedbrowser.min.js" charset="utf-8"></script>
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" charset="utf-8"></script>
-    <script src="https://use.fontawesome.com/94c7e4ba6f.js" charset="utf-8"></script>
-    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="assets/js/main.js" charset="utf-8"></script>
-    <script src="assets/js/yt.play.js" charset="utf-8"></script>
-    <script type="text/javascript">
-    //event listener: DOM ready
-function addLoadEvent(func) {
-  var oldonload = window.onload;
-  if (typeof window.onload != 'function') {
-      window.onload = func;
-  } else {
-      window.onload = function() {
-          if (oldonload) {
-              oldonload();
-          }
-          func();
-      }
-  }
-}
-//call plugin function after DOM ready
-addLoadEvent(function(){
-  outdatedBrowser({
-      bgColor: '#f25648',
-      color: '#ffffff',
-      lowerThan: 'transform',
-      languagePath: ''
-  })
-});
-    </script>
 </body>
 </html>
