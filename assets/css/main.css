@@ -26,10 +26,11 @@ header > p {
   font-size: 18px;
   margin-top: -35px;
   margin-left: 165px;
+  color: #777;
 }
 
 #content {
-  text-align: center;
+  padding-bottom: 20px;
 }
 
 #project {
@@ -49,7 +50,7 @@ header > p {
   width: 300px;
   height: 300px;
 }
-video,img,footer {
+.noSelect {
   -webkit-user-select: none;
 }
 
@@ -94,6 +95,9 @@ footer {
 }
 .fa-soundcloud:hover {
   color: #ff8800 !important;
+}
+.fa-youtube-play:hover {
+  color: #cd201f !important;
 }
 .fa-twitch:hover {
   color: #6441a5 !important;
