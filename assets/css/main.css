@@ -68,7 +68,7 @@ header>input[type="button"]:hover {
 footer {
 	border-top: 1px solid #777;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 	height: 100%;
 	width: 450px;
 	cursor: default;
