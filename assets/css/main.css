@@ -1,110 +1,178 @@
 *::selection {
-  color: white;
-  background: #ff69b4;
+	color: white;
+	background: #ff69b4;
 }
-
 body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
 header {
-  height: 100%;
-  width: 450px;
-  border-bottom: 1px solid #777;
+	height: 100%;
+	width: 450px;
+	border-bottom: 1px solid #777;
+	padding-bottom: 10px;
 }
-
-header > h1 {
-  font-size: 3em;
+header>h1 {
+	font-size: 3em;
 }
-
-header > p:first-of-type {
-  font-size: 18px;
-  margin-top: -35px;
-  margin-left: 165px;
-  color: #777;
+header>p:first-of-type {
+	font-size: 18px;
+	margin-top: -35px;
+	margin-left: 165px;
+	color: #777;
 }
-
+header>input[type="button"] {
+	padding: 10px 20px;
+	border: 1px solid #777;
+	border-radius: 20px;
+	text-shadow: none;
+	color: #777;
+	background: transparent;
+	cursor: pointer;
+	outline: none;
+  transition: color .1s ease, border-color .1s ease;
+}
+header>input[type="button"]:hover {
+	border-color: #ff69b4;
+	color: #ff69b4;
+}
 #content {
-  padding-bottom: 20px;
+	padding-bottom: 10px;
 }
-
 #project {
-  display: block;
+	display: block;
 }
-
 .projTitle {
-  color: #000;
-  font-size: 20px;
+	color: #000;
+	font-size: 20px;
 }
 .projDetail {
-  color: #777;
-  font-size: 18px;
-  margin-top: 0px;
+	color: #777;
+	font-size: 18px;
+	margin-top: 0px;
 }
 .projMedia {
-  width: 300px;
-  height: 300px;
+	width: 300px;
+	height: 300px;
 }
 .noSelect {
-  -webkit-user-select: none;
+	-webkit-user-select: none;
 }
-
 .smolBean {
-  font-size: 12px;
+	font-size: 12px;
 }
-
 footer {
-  border-top: 1px solid #777;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  height: 100%;
-  width: 450px;
-  cursor: default;
+	border-top: 1px solid #777;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 100%;
+	width: 450px;
+	cursor: default;
+}
+#links>.fa {
+	color: #777;
+	margin: 3px;
+	font-size: 20px;
+	text-decoration: none;
+	transition: color .1s ease;
+}
+.fa-github:hover, .fa-github.hover {
+	color: #333 !important;
+}
+.fa-key:hover, .fa-key.hover {
+	color: #33a0ff !important;
+}
+.fa-telegram:hover, .fa-telegram.hover {
+	color: #0088cc !important;
+}
+.fa-twitter:hover, .fa-twitter.hover {
+	color: #1da1f2 !important;
+}
+.fa-reddit-alien:hover, .fa-reddit-alien.hover {
+	color: #ff4500 !important;
+}
+.fa-steam:hover, .fa-steam.hover {
+	color: #000000 !important;
+}
+.fa-medium:hover, .fa-medium.hover {
+	color: #48e79a !important;
+}
+.fa-tumblr:hover, .fa-tumblr.hover {
+	color: #36465d !important;
+}
+.fa-soundcloud:hover, .fa-soundcloud.hover {
+	color: #ff8800 !important;
+}
+.fa-youtube-play:hover, .fa-youtube-play.hover {
+	color: #cd201f !important;
+}
+.fa-twitch:hover, .fa-twitch.hover {
+	color: #6441a5 !important;
 }
 
-#profiles > .fa {
-  color: #777;
-  margin: 3px;
-  font-size: 20px;
-  text-decoration: none;
-  transition: color .1s ease;
+/* animations */
+
+
+/* https://github.com/daneden/animate.css/blob/master/animate.css#L11-L16 */
+
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 }
 
-.fa-github:hover {
-  color: #333 !important;
+/* https://github.com/daneden/animate.css/blob/master/animate.css#L415-L472 */
+
+@-webkit-keyframes tada {
+	from {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+	10%, 20% {
+		-webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+		transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+	}
+	30%, 50%, 70%, 90% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+	}
+	40%, 60%, 80% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	}
+	to {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
 }
-.fa-key:hover {
-  color: #33a0ff !important;
+@keyframes tada {
+	from {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+	10%, 20% {
+		-webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+		transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+	}
+	30%, 50%, 70%, 90% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+	}
+	40%, 60%, 80% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	}
+	to {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
 }
-.fa-telegram:hover {
-  color: #0088cc !important;
-}
-.fa-twitter:hover {
-  color: #1da1f2 !important;
-}
-.fa-reddit-alien:hover {
-  color: #ff4500 !important;
-}
-.fa-steam:hover {
-  color: #000000 !important;
-}
-.fa-medium:hover {
-  color: #48e79a !important;
-}
-.fa-tumblr:hover {
-  color: #36465d !important;
-}
-.fa-soundcloud:hover {
-  color: #ff8800 !important;
-}
-.fa-youtube-play:hover {
-  color: #cd201f !important;
-}
-.fa-twitch:hover {
-  color: #6441a5 !important;
+.tada {
+	-webkit-animation-name: tada;
+	animation-name: tada;
 }
