@@ -1,5 +1,5 @@
 $(window).on("focus", function() {
-    document.title = "tetra is fluffy~!"
+    document.title = "tetra is fluffy~"
 });
 $(window).on("blur", function() {
     document.title = "come back! <3"
