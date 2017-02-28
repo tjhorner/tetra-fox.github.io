@@ -62,7 +62,7 @@ header>input[type="button"]:hover {
 .noSelect {
 	-webkit-user-select: none;
 }
-.smolBean {
+.caption {
 	font-size: 12px;
 }
 footer {
