@@ -7,19 +7,29 @@ $(window).on("blur", function() {
 
 $("input[name='linksBtn']").click(function() {
     if (!isElementInViewport($("#links"))) {
-        $("html, body").animate({
+        /*$("html, body").animate({
             scrollTop: $(document).height()
-        }, 1000, linkAni())
+        }, 1000, linkAni())*/
+        $("#pullover").removeClass("hidden");
+        $("#pullover").addClass("show");
+        $("#wrapper").removeClass("show");
+        $("#wrapper").addClass("hidden");
     } else {
         linkAni();
     }
+});
+$("input[name='closeBtn']").click(function() {
+        $("#pullover").removeClass("show");
+        $("#pullover").addClass("hidden");
+        $("#wrapper").removeClass("hidden");
+        $("#wrapper").addClass("show");
 });
 
 function linkAni() {
     $("#links").addClass("tada");
     setTimeout(function() {
         $("#links").removeClass("tada")
-    }, 1000);
+    }, 1100);
     $(".fa-github").addClass("hover");
     setTimeout(function() {
         $(".fa-github").removeClass("hover");
