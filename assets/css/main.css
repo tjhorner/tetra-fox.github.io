@@ -9,6 +9,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	display: none;
 }
 #wrapper {
 	transition: max-height .5s ease;
