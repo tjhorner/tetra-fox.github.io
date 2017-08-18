@@ -1,93 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- Various Meta -->
-    <meta charset="utf-8">
-    <title>tetra is fluffy~</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="tetra's personal site">
-    <!-- <link rel="shortcut icon" href="assets/img/favicon.ico"> -->
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-    <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script defer src="assets/js/main.js" charset="utf-8"></script>
-</head>
-<body>
-    <!-- Wrapper -->
-    <div id="wrapper" class="show">
-        <!-- Header -->
-        <header>
-            <h1>hi there! i'm tetra.</h1>
+    <head>
+        <!-- meta -->
+        <title>tetra</title>
+        <meta charset="utf-8">
+        <!-- fonts -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css">
+        <!-- styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.0/css/iziModal.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.0/js/iziModal.min.js"></script>
+        <script defer src="assets/js/scripts.js"></script>
+        <!-- open graph tags -->
+        <meta property="og:title" content="tetra"/>
+        <meta property="og:description" content="tetra's personal site"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://tetra.ga/"/>
+        <meta property="og:image" content="assets/img/opengraph.png"/>
+    </head>
+    <body>
+        <div id="wrapper">
+        <header class="animated fadeInDown">
+            <h1 id="name">tetra<span id="pulse"></span></h1>
             <p>typing with paws is hard~</p>
-            <p>i'm a furry, gamer, and programmer</p>
-            <input type="button" name="linksBtn" value="links">
         </header>
-        <!-- Content -->
-        <div id="content">
-            <h3>here are some things i've made:</h3>
-            <!-- Project: leavealink -->
-            <div class="project">
-                <a href="https://leavealink.tk" class="projTitle">leavealink</a>
-                <p class="projDetail">leave a link, get a link</p>
-                <a href="https://leavealink.tk"><video class="projMedia noSelect" src="assets/vid/leavealink.webm" autoplay loop></video></a>
-                <p class="projDetail caption">the person before me left reddit.com</p>
-            </div>
-            <!-- Project: VolumeFeedback -->
-            <div class="project">
-                <a href="https://github.com/wc1202/VolumeFeedback" class="projTitle">VolumeFeedback</a>
-                <p class="projDetail">a mac-esque volume feedback tool for windows</p>
-                <a href="https://github.com/wc1202/VolumeFeedback"><img class="projMedia noSelect" src="assets/img/volumefeedback.png"></img></a>
-                <p class="projDetail caption">dude how do i put sound on a picture</p>
-            </div>
-            <!-- Project: Bots -->
-            <div class="project">
-                <a href="/things/bots" class="projTitle">Bots</a>
-                <p class="projDetail">basically just my telegram and twitter bots</p>
-                <p class="projDetail caption">what am i supposed to put for a pic????????</p>
-            </div>
-            <!-- Project: AdHate -->
-            <div class="project">
-                <a href="https://github.com/wc1202/AdHate" class="projTitle">AdHate</a>
-                <p class="projDetail">block ads everywhere</p>
-                <a href="https://github.com/wc1202/AdHate"><img class="projMedia noSelect" src="assets/img/adhate.png"></img></a>
-                <p class="projDetail caption">i /would/ make a gif but i'm too lazy to</p>
-            </div>
-        </div>
-        <!-- Footer -->
-        <footer class="noSelect">
-            <!-- Profiles -->
-            <div id="icons" class="animated">
-                <a href="https://github.com/tetra-fox" class="fa fa-github"></a>
-                <a href="https://keybase.io/tetrafox" class="fa fa-key"></a>
-                <a href="https://t.me/tetra_fox" class="fa fa-telegram"></a>
-                <a href="https://twitter.com/tetrafox_" class="fa fa-twitter"></a>
-                <a href="https://reddit.com/u/syrexide" class="fa fa-reddit-alien"></a>
-                <a href="https://steamcommunity.com/id/tetrafox" class="fa fa-steam"></a>
-                <a href="https://medium.com/@tetrafox_" class="fa fa-medium"></a>
-                <a href="https://tetrafox.tumblr.com/" class="fa fa-tumblr"></a>
-                <a href="https://soundcloud.com/tetrafox" class="fa fa-soundcloud"></a>
-                <a href="https://www.youtube.com/channel/UC1_gmxWhQ3M4nWoibIar3Ig" class="fa fa-youtube-play"></a>
-                <a href="https://twitch.tv/tetrafox_" class="fa fa-twitch"></a>
-            </div>
+        <section id="about-me" class="animated fadeIn">
+            <h1 class="section-title">about me</h1>
+            <p class="section-content">
+                hi there! I'm tetra. I'm a programmer, gamer, furry, and user of oxford commas.
+            </p>
+        </section>
+        <section id="projects" class="animated fadeIn">
+             <h1 class="section-title">projects</h1>
+             <p class="section-content">
+                <p><a href="https://leavealink.tk/">leavealink</a>: it was a dumb idea I had. basically you just submit a link to be left for the next person, and then you are redirected to the link that the last person left. created with node.js and express.</br><a href="https://github.com/tetra-fox/leavealink">source code</a></p>
+                <p><a href="https://github.com/tetra-fox/VolumeFeedback/releases/latest">volumefeedback</a>: I liked how on macOS there is feedback when you change the volume, and I couldn't find a program that did this on windows, so I wrote one that did just that. written in c# using the naudio library.</br><a href="https://github.com/tetra-fox/volumefeedback">source code</a></p>
+                <p><a href="https://github.com/tetra-fox/adhate/releases/latest">adhate</a>: it literally just modifies the /etc/hosts file on windows to resolve many ad domains to 0.0.0.0. written in c#.</br><a href="https://github.com/tetra-fox/adhate">source code</a> // <a href="https://github.com/StevenBlack/hosts/blob/master/hosts">hosts file</a></p>
+                <p><span id="bots-link">bots</span>: just a bunch of bots that I've made over time</p>
+                <p>no source code for this one because I'm too lazy to put them on github.</p>
+             </p>
+        </section>
+        <section id="links" class="animated fadeIn">
+             <h1 class="section-title">links</h1>
+             <p class="section-content">I have some links you might find useful:</p>
+             <ul>
+                    <li><a href="https://github.com/tetra-fox">github</a></li>
+                    <li><a href="https://keybase.io/tetrafox">keybase</a></li>
+                    <li><a href="https://t.me/tetra_fox">telegram</a></li>
+                    <li><a href="https://twitter.com/tetrafox_">twitter</a></li>
+                    <li><a href="https://reddit.com/u/syrexide">reddit</a></li>
+                    <li><a href="https://steamcommunity.com/id/tetrafox">steam</a></li>
+                    <li><a href="https://medium.com/@tetrafox_">medium</a></li>
+                    <li><a href="https://tetrafox.tumblr.com/">tumblr</a></li>
+                    <li><a href="https://soundcloud.com/tetrafox">soundcloud</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC1_gmxWhQ3M4nWoibIar3Ig">youtube</a></li>
+                    <li><a href="https://twitch.tv/tetrafox_">twitch</a></li>
+             </ul>
+        </section>
+        <section id="lol" class="animated fadeIn">
+             <h1 class="section-title">I'm don't know what to put here but I made a tetrad color palette and I dont wanna forget the hex code.</h1>
+        </section>
+        <footer class="animated fadeInUp">
+            <p>&copy; me 2017</p>
+            <sup><sup><sup><sup><sup>:3c</sup></sup></sup></sup></sup>
         </footer>
+        <!-- bots modal -->
+        <div id="bots-modal">
+            <h1>bots</h1>
+            <table>
+            <tr>
+                <th>telegram</th>
+                <th>twitter</th>
+            </tr>
+            <tr>
+                <td><a href="https://t.me/owowhatsthisbot">@owowhatsthisbot</a></td>
+                <td><a href="https://twitter.com/idiotbicht">@idiotbicht</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://t.me/messagejsonbot">@messagejsonbot</a></td>
+                <td><a href="https://twitter.com/singleemoji">@singleemoji</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://t.me/anothaonebot">@anothaonebot</a></td>
+                <td><a href="https://twitter.com/bangerz_quotes">@bangerz_quotes</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://t.me/emphasizebot">@emphasizebot</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://t.me/quackerbot">@quackerbot</a></td>
+                <td></td>
+            </tr>
+        </table>
+        </div>
     </div>
-    <!-- Link Pullover -->
-    <div id="links">
-      <input type="button" name="closeBtn" value="x">
-      <a href="https://github.com/tetra-fox" class="fa fa-github">GitHub</a>
-      <a href="https://keybase.io/tetrafox" class="fa fa-key">Keybase</a>
-      <a href="https://t.me/tetra_fox" class="fa fa-telegram">Telegram</a>
-      <a href="https://twitter.com/tetrafox_" class="fa fa-twitter">Twitter</a>
-      <a href="https://reddit.com/u/syrexide" class="fa fa-reddit-alien">Reddit</a>
-      <a href="https://steamcommunity.com/id/tetrafox" class="fa fa-steam">Steam</a>
-      <a href="https://medium.com/@tetrafox_" class="fa fa-medium">Medium</a>
-      <a href="https://tetrafox.tumblr.com/" class="fa fa-tumblr">Tumblr</a>
-      <a href="https://soundcloud.com/tetrafox" class="fa fa-soundcloud">Soundcloud</a>
-      <a href="https://www.youtube.com/channel/UC1_gmxWhQ3M4nWoibIar3Ig" class="fa fa-youtube-play">YouTube</a>
-      <a href="https://twitch.tv/tetrafox_" class="fa fa-twitch">Twitch</a>
-    </div>
-</body>
+    </body>
 </html>

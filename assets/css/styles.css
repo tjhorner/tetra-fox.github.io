@@ -1,0 +1,250 @@
+body {
+	margin: 0;
+	font-family: "Hack", monospace;
+	background: rgba(34, 34, 34, 1);
+	color: rgba(237, 238, 240, 1);
+	font-size: 1.5em;
+	padding: 0 2em 0 2em;
+}
+a {
+	color: #edeef0;
+}
+::selection {
+	background: #edeef0;
+	color: rgba(34, 34, 34, 1);
+}
+#wrapper {
+	max-width: 1024px;
+	margin: auto;
+}
+#wrapper:before {
+	content: "";
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+	z-index: 9999;
+	background-size: 100% 2px, 3px 100%;
+	pointer-events: none;
+}
+#wrapper::after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(18, 16, 16, 0.1);
+    opacity: 0;
+    z-index: 9999;
+    pointer-events: none;
+    animation: flicker 0.15s infinite;
+  }
+
+/* header */
+header {
+	border-bottom: rgba(255, 255, 255, 0.1) solid 5px;
+}
+#pulse {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 0 rgba(255, 255, 255, 0.1);
+	animation: pulse 2s infinite;
+}
+header>p {
+	line-height: 0;
+}
+
+/* section title styles */
+.section-title:before {
+	content: "¬ ";
+	position: absolute;
+	margin-left: -1em;
+}
+section#about-me>.section-title {
+	color: #6977F4;
+}
+section#projects>.section-title {
+	color: #F955A6;
+}
+section#links>.section-title {
+	color: #BDFC57;
+}
+section#lol>.section-title {
+	color: #FFD158;
+}
+
+/* bots link */
+#bots-link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* bots modal */
+#bots-modal {
+    display: none;
+    position: fixed;
+    margin: auto;
+    background: rgba(34, 34, 34, 1);
+    box-shadow: 0 12px 24px rgba(0,0,0,.5);
+    padding: 1em 2em 2em 2em;
+    overflow: hidden;
+}
+.iziModal-content>table {
+    margin: auto;
+    border-spacing: .5em;
+}
+.iziModal-content>table>tbody>tr>th {
+    border-bottom: rgba(255, 255, 255, 0.1) solid 5px;
+}
+.iziModal-content>table>tbody>tr>td,.iziModal-content>table>tbody>tr>th {
+    padding: .5em;
+}
+
+/* link section list styles */
+section#links>ul {
+	list-style: square outside none;
+}
+
+/* classes */
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+.fadeIn {
+	animation-name: fadeIn;
+}
+.fadeInDown {
+	animation-name: fadeInDown;
+}
+.fadeInUp {
+	animation-name: fadeInUp;
+}
+section.animated {
+	animation-delay: 0.5s;
+}
+footer.animated {
+	animation-delay: 1s;
+}
+
+/* footer */
+footer {
+	border-top: rgba(255, 255, 255, 0.1) solid 5px;
+}
+
+/* css animations */
+/* https://github.com/daneden/animate.css/blob/master/animate.css#L559-L587 */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+/* https://github.com/daneden/animate.css/blob/master/animate.css#L669-L679 */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+	}
+	70% {
+		box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+@keyframes flicker {
+    0% {
+      opacity: 0.99786;
+    }
+    5% {
+      opacity: 0.6;
+    }
+    10% {
+      opacity: 0.90531;
+    }
+    15% {
+      opacity: 0.05197;
+    }
+    20% {
+      opacity: 0.19943;
+    }
+    25% {
+      opacity: 0.6174;
+    }
+    30% {
+      opacity: 0.66305;
+    }
+    35% {
+      opacity: 0.21883;
+    }
+    40% {
+      opacity: 0.00541;
+    }
+    45% {
+      opacity: 0.01178;
+    }
+    50% {
+      opacity: 0.79114;
+    }
+    55% {
+      opacity: 0.48381;
+    }
+    60% {
+      opacity: 0.85847;
+    }
+    65% {
+      opacity: 0.46717;
+    }
+    70% {
+      opacity: 0.05734;
+    }
+    75% {
+      opacity: 0.49517;
+    }
+    80% {
+      opacity: 0.68901;
+    }
+    85% {
+      opacity: 0.42662;
+    }
+    90% {
+      opacity: 0.02558;
+    }
+    95% {
+      opacity: 0.166;
+    }
+    100% {
+      opacity: 0.93093;
+    }
+  }
