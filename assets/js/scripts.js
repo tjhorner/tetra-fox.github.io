@@ -10,7 +10,7 @@ $("#bots-link").click(function() {
 
 function updateLfm() {
     $.ajax({
-        url: "https://lastfm.tetrafox.pw/jsonp",
+        url: "https://lastfm.tetrafox.pw/",
         success: function(data) {
             console.log(data);
             $("#lfm").text(" I'm currently listening to " + data.track + " by " + data.artist + ".");
