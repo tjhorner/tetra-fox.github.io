@@ -278,3 +278,69 @@ footer {
 		opacity: 0.5;
 	}
 }
+
+@keyframes flicker {
+    0% {
+      opacity: 0.99786;
+    }
+    5% {
+      opacity: 0.6;
+    }
+    10% {
+      opacity: 0.90531;
+    }
+    15% {
+      opacity: 0.05197;
+    }
+    20% {
+      opacity: 0.19943;
+    }
+    25% {
+      opacity: 0.6174;
+    }
+    30% {
+      opacity: 0.66305;
+    }
+    35% {
+      opacity: 0.21883;
+    }
+    40% {
+      opacity: 0.00541;
+    }
+    45% {
+      opacity: 0.01178;
+    }
+    50% {
+      opacity: 0.79114;
+    }
+    55% {
+      opacity: 0.48381;
+    }
+    60% {
+      opacity: 0.85847;
+    }
+    65% {
+      opacity: 0.46717;
+    }
+    70% {
+      opacity: 0.05734;
+    }
+    75% {
+      opacity: 0.49517;
+    }
+    80% {
+      opacity: 0.68901;
+    }
+    85% {
+      opacity: 0.42662;
+    }
+    90% {
+      opacity: 0.02558;
+    }
+    95% {
+      opacity: 0.166;
+    }
+    100% {
+      opacity: 0.93093;
+    }
+  }
