@@ -9,9 +9,7 @@ $("#bots-link").click(function() {
 });
 
 function updateLfm() {
-    var load = data => {
-        $("#lfm").text(" I'm currently listening to " + data.track + " by " + data.artist + ".");
-    }
+    $.getScript("assets/js/last.fm.js");
 }
 updateLfm();
 setInterval(updateLfm, 60000);
