@@ -1,5 +1,5 @@
 $("#pulse").click(function() {
-    $.getScript("assets/js/fuck-shit-up.js");
+    $.getScript("assets/js/fuck-shit-up.min.js");
 });
 
 var botsModal = $("#bots-modal").iziModal();
