@@ -9,17 +9,9 @@ $("#bots-link").click(function() {
 });
 
 function updateLfm() {
-    $.ajax({
-        url: "https://lastfm.tetrafox.pw/",
-        success: function(data) {
-            console.log(data);
-            $("#lfm").text(" I'm currently listening to " + data.track + " by " + data.artist + ".");
-        },
-        error: function() {
-            $("#lfm").remove();
-            console.log("no");
-        }
-    });
+    var load = data => {
+        $("#lfm").text(" I'm currently listening to " + data.track + " by " + data.artist + ".");
+    }
 }
 updateLfm();
 setInterval(updateLfm, 60000);
