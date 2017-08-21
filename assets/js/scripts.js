@@ -1,4 +1,5 @@
 $("#pulse").click(function() {
+    //https://github.com/jimkang/fuck-shit-up-bookmarklet/blob/master/chrome/bookmarklet.js
     $.getScript("assets/js/fuck-shit-up.min.js");
 });
 
@@ -20,5 +21,5 @@ function updateLfm() {
         }
     });
 }
-
+updateLfm();
 setInterval(updateLfm, 60000);
